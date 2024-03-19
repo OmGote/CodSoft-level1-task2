@@ -1,0 +1,249 @@
+:root{
+    --txt-color: rgba(29, 27, 27, 0.852);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 1.25rem 0;
+}
+
+nav img{
+    height: 1.56rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--txt-color);
+    font-size: 0.9rem;
+}
+
+.login-btn{
+    background-color: hsl(0, 94%, 66%);
+    padding: 0.625rem 1.875rem;
+    color: white;
+    border-radius: .4375rem;
+    outline: none;
+}
+
+/* -------------------------------------- hero section ----------------------------------- */
+.hero{
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-txt .wrapper{
+    width: 65%;
+    margin: auto;
+}
+
+.hero-txt .wrapper h1{
+    font-size: 3rem;
+    color: var(--txt-color);
+    margin-bottom: 1.25rem;
+}
+
+.hero-txt .wrapper p{
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--txt-color);
+    margin-bottom: 1.25rem;
+    opacity: 0.5;
+}
+
+.get-it-btn{
+    padding: 0.9375rem 1.25rem;
+    outline: none;
+    border: none;
+    background-color: hsl(231, 69%, 60%);
+    box-shadow: 0.125rem 0.0625rem 0.3125rem rgba(79, 79, 79, 0.264);
+    color: white;
+    margin-right: 0.625rem;
+    border-radius: 0.3125rem;
+    font-weight: 560;
+}
+
+.get-it-btn + .get-it-btn{
+    background-color: white;
+    color: var(--txt-color);
+}
+
+.hero-img{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img .background-box{
+    background-color: hsl(231, 69%, 60%);
+    height: 21.875rem;
+    width: 31.25rem;
+    z-index: -10;
+    position: absolute;
+    right: 0;
+    bottom: 6.25rem;
+    border-bottom-left-radius: 200px;
+}
+
+/* ------------------------------------- download section --------------------------------------- */
+.download{
+    width: 80%;
+    margin: auto;
+}
+
+.download h1{
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: var(--txt-color);
+}
+
+.download > p{
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: var(--txt-color);
+    opacity: 0.7;
+    font-weight: 500;
+    margin-bottom: 3.125rem;
+}
+
+.download .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0px 3.125rem rgba(79, 79, 79, 0.264);
+    color: var(--txt-color);
+}
+
+.download .box img{
+    height: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+.download .box h2{
+    font-size: 1.2rem;
+    margin-bottom: 0.625rem;
+}
+
+.download .box p{
+    font-size: 0.8rem;
+}
+
+.download .box .add-extension{
+    border: none;
+    outline: none;
+    padding: 0.625rem 1.25rem;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 0.3125rem;
+    margin-top: 1.25rem;
+}
+
+/* ------------------------------------------------ contact section ----------------------------------------- */
+.contact{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 6.25rem;
+    padding: 3.125rem;
+}
+
+.contact .wrapper{
+    width: 40%;
+    margin: auto;
+}
+
+.contact .wrapper p{
+    font-family: monospace;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.contact .wrapper h2{
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+
+.contact .wrapper input{
+    padding: 0.625rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 0.3125rem;
+}
+
+.contact .wrapper button{
+    padding: 10px;
+    width: 19%;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 0.3125rem;
+}
+
+/* --------------------------------------------- footer ----------------------------------------------- */
+footer{
+    background-color: hsl(229, 31%, 21%);
+}
+
+footer nav ul li a{
+    color: white;
+}
+
+/* -------------------------------------------- media query ------------------------------ */
+@media (max-width: 970px){
+    html{
+        font-size: 12px;
+    }
+    .hero-img{
+        width: 20%;
+    }
+    .hero{
+        flex-direction: column;
+    }
+}
